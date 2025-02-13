@@ -1,6 +1,6 @@
 // src/utils/api.js
 
-const API_URL = 'http://localhost:1337';
+const API_URL = 'https://chat-server-z4cd.onrender.com';
 
 // Helper function to handle API responses
 const handleResponse = async (response) => {

@@ -8,7 +8,7 @@ export function useWebSocket() {
     const socketRef = useRef(null);
 
     useEffect(() => {
-        const socket = io('http://localhost:1337', {
+        const socket = io('https://chat-server-z4cd.onrender.com', {
             transports: ['websocket', 'polling'],
         });
 

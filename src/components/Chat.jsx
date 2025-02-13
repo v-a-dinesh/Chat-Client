@@ -42,7 +42,7 @@ export default function Chat() {
 
     loadSavedSessions();
 
-    const newSocket = io('http://localhost:1337', {
+    const newSocket = io('https://chat-server-z4cd.onrender.com', {
       withCredentials: true,
       transports: ['websocket', 'polling']
     });

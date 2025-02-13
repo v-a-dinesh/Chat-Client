@@ -21,7 +21,7 @@ export function AuthProvider({ children }) {
                 return;
             }
 
-            const response = await fetch('http://localhost:1337/api/users/me', {
+            const response = await fetch('https://chat-server-z4cd.onrender.com/api/users/me', {
                 headers: {
                     Authorization: `Bearer ${token}`,
                 },
@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
 
     const login = async (identifier, password) => {
         try {
-            const response = await fetch('http://localhost:1337/api/auth/local', {
+            const response = await fetch('https://chat-server-z4cd.onrender.com/api/auth/local', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -71,7 +71,7 @@ export function AuthProvider({ children }) {
 
     const register = async (username, email, password) => {
         try {
-            const response = await fetch('http://localhost:1337/api/auth/local/register', {
+            const response = await fetch('https://chat-server-z4cd.onrender.com/api/auth/local/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
